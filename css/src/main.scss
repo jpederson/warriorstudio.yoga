@@ -1,0 +1,36 @@
+
+
+// set colors
+$navy: #184275;
+$sky: #67cce6;
+$red: #dc2b3a;
+$sun: #fedc4a;
+
+$green: #38914a;
+$grey: #666666;
+$grey-light: #999999;
+$grey-dark: #444444;
+
+
+// breakpoints
+$bp-s: 600px;
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 1150px;
+
+
+// import all the things
+@import "mixins", "fonts", "reset", "button", "base", "grid", "form";
+
+
+// import layout components
+@import "header", "showcase", "content", "sidebar", "footer";
+
+
+// include the component css
+@import "component/page_header", "component/one_column", "component/two_column", "component/image", "component/cta", "component/quick_links", "component/code";
+
+
+// import lightbox styles
+@import "magnific";
+

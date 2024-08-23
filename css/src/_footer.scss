@@ -1,0 +1,82 @@
+
+
+footer {
+	@include clearfix;
+	@include padding;
+	color: white;
+	line-height: 1.5em;
+	text-align: center;
+
+	@include respond-to( $bp-m ) {
+		text-align: left;
+	}
+
+	.wrap {
+		@include respond-to( $bp-m ) {
+			display: flex;
+			align-items: center;
+
+			.logo {
+				flex: 1 25%;
+			}
+
+			.social { 
+				flex: 1 25%;
+				text-align: right;
+			}
+
+			.content {
+				flex: 1 1 50%;
+			}
+		}
+	}
+
+	.logo {
+		padding: 5px 0;
+
+		img {
+			max-width: 400px;
+		}
+	}
+
+	.content {
+		padding: 10px 0;
+
+		@include respond-to( $bp-m ) {
+			padding-left: 20px;
+		}
+
+		@include respond-to( $bp-l ) {
+			padding-left: 40px;
+		}
+	}
+
+	.social {
+		padding: 10px 0;
+
+		a {
+			border-bottom: none;
+			display: inline-block;
+			transition: 400ms all ease-in-out;
+
+			&:hover {
+				opacity: .8;
+			}
+
+			img {
+				width: 40px;
+
+				@include respond-to( $bp-m ) {
+					width: 60px;
+				}
+			}
+		}
+	}
+}
+
+
+.copyright {
+	font-size: .8em;
+	text-align: center;
+	padding: 20px;
+}

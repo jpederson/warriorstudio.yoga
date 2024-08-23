@@ -1,0 +1,16 @@
+
+
+.page-header {
+    @include padding;
+
+    h1 {
+        @include font-title-bold;
+        font-size: 2em;
+        margin-bottom: -0.2em;
+
+        @include respond-to( $bp-l ) {
+            font-size: 3em;
+        }
+    }
+}
+

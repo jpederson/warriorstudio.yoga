@@ -1,0 +1,79 @@
+
+
+.two-column-container {
+    @include padding;
+    @extend .content-style;
+
+    &.pad-tall {
+        @include padding-tall;
+    }
+
+    @include respond-to( $bp-m ) {
+        .two-column-inner {
+            display: flex;
+        }
+
+        &.vcenter .two-column-inner {
+            align-items: center;
+        }
+
+        &.reverse .two-column-inner {
+            flex-direction: row-reverse;
+        }
+
+        .left, .right {
+            flex: 1 1 47%;
+        }
+
+        .left {
+            margin-right: 6%;
+        }
+    }
+
+    .two-column-inner {
+    
+        .left {
+            margin: 0 0 10px 0;
+
+            @include respond-to( $bp-m ) {
+                margin: 0 3% 0 0;
+            }
+        }
+
+        .right {
+
+        }
+
+        @include respond-to( $bp-xl ) {
+            .left {
+                flex: 0 0 47%;
+                margin: 0 3% 0 0;
+            }
+
+            .right {
+                flex: 0 0 47%;
+                margin: 0 0 0 3%;
+            }
+        }
+    }
+
+
+    // some legacy stuff for admissions events
+    .event {
+        border-bottom: 3px solid $sky;
+        padding: 20px 0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        .btn {
+            float: right;
+        }
+    }
+}
+

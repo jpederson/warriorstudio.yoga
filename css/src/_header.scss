@@ -1,0 +1,125 @@
+
+
+header {
+	position: relative;
+	@include background( 'navy' );
+	@include padding;
+
+	a {
+		border-bottom: none;
+	}
+
+	.wrap {
+		@include respond-to( $bp-m ) {
+			display: flex;
+			align-items: center;
+
+			.logo, nav {
+				flex: 1 1 fit-content;
+			}
+		}
+	}
+	
+	.logo {
+		padding-right: 50px;
+
+		img {
+			width: 200px;
+
+			@include respond-to( $bp-m ) {
+				width: 300px;
+			}
+
+			@include respond-to( $bp-l ) {
+				width: 400px;
+			}
+		}
+	}
+
+	nav {
+		position: relative;
+
+		@include respond-to( $bp-m ) {
+			text-align: right;
+			padding-top: 20px;
+		}
+
+		@include respond-to( $bp-l ) {
+			padding-top: 30px;
+		}
+		
+		button.menu-toggle {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: -50px;
+			right: 0;
+			border: 0;
+			padding: 0;
+			background: white;
+			color: transparent;
+			background: url(../img/menu.svg) center center no-repeat;
+			overflow: hidden;
+			text-indent: 1000px;
+			opacity: .8;
+			
+			@include respond-to( $bp-s ) {
+
+			}
+
+			@include respond-to( $bp-m ) {
+				display: none;
+			}
+		}
+
+		.nav-menu {
+			display: none;
+			padding-top: 20px;
+						
+			@include respond-to( $bp-m ) {
+				display: block;
+				@include clearfix;
+			}
+
+			li {
+				@include respond-to( $bp-m ) {
+					box-shadow: none;
+					position: relative;
+					display: inline-block;
+				}
+
+				a {
+					@include font-title-bold;
+					display: block;
+					padding: 12px 5px;
+					font-size: 18px;
+					line-height: 18px;
+					color: white;
+					text-decoration: none;
+					text-transform: uppercase;
+					width: 100%;
+					transition: 400ms all ease-in-out;
+					background-color: transparent;
+					text-align: center;
+
+					@include respond-to( $bp-m ) {
+						display: inline-block;
+						text-align: left;
+						padding: 15px 10px;
+					}
+
+					@include respond-to( $bp-l ) {
+						font-size: 22px;
+						padding: 15px 15px;
+					}
+				}
+
+				&:hover, &.open {
+					a {
+						color: $sky;
+					}
+				}
+			}
+		}
+	}
+}

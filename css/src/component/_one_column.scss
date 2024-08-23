@@ -1,0 +1,10 @@
+
+
+.one-column-container {
+    @include padding;
+
+    &.pad-tall {
+        @include padding-tall;
+    }
+}
+

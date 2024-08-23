@@ -1,0 +1,31 @@
+
+
+.cta {
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    @include padding;
+
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+
+        @include respond-to( $bp-s ) {
+            display: inline-block;
+            margin: 0 3px;
+        }
+
+        @include respond-to( $bp-m ) {
+            margin-bottom: 0;
+        }
+
+        @include respond-to( $bp-l ) {
+            margin: 0 10px;
+        }
+    }
+}
+

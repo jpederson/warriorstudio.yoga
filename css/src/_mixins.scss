@@ -1,0 +1,90 @@
+
+
+// responsive mixin
+@mixin respond-to( $breakpoint ) {
+    @media only screen and ( min-width: $breakpoint ) { @content; }
+}
+
+
+// Clearfix mixin
+@mixin clearfix {
+	zoom: 1;
+
+	&:before, &:after { 
+		content: ""; 
+		display: table;
+	}
+
+	&, &:before, &:after { clear: both; }
+}
+
+
+@mixin wrap( $max-width ) {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+
+@mixin wrap-main {
+	@include wrap( $bp-xl );
+}
+
+
+@mixin padding {
+	padding: 20px;
+	@include respond-to( $bp-m ) { padding: 20px 30px; }
+	@include respond-to( $bp-l ) { padding: 30px 40px; }
+	@include respond-to( $bp-xl ) { padding: 40px 50px; }
+}
+
+
+@mixin padding-tall {
+	padding: 30px 20px;
+	@include respond-to( $bp-m ) { padding: 40px 30px; }
+	@include respond-to( $bp-l ) { padding: 60px 40px; }
+	@include respond-to( $bp-xl ) { padding: 70px 50px; }
+}
+
+
+@mixin background( $bg: 'navy' ) {
+	background: fixed url(../img/bg-#{$bg}.svg) right center / cover no-repeat;
+
+	* {
+		@if $bg == 'red' {
+			color: white;
+		} @else if $bg == 'navy' {
+			color: white;
+		} @else if $bg == 'navy-light' {
+			color: white;
+		} @else if $bg == 'sky' {
+			color: black;
+		} @else if $bg == 'white' {
+			color: black;
+		} @else if $bg == 'sun' {
+			color: black;
+		}
+	}
+
+	a {
+		@if $bg == 'red' {
+			color: white;
+			border-bottom: 2px dotted rgba( white, .5 );
+		} @else if $bg == 'navy' {
+			color: white;
+			border-bottom: 2px dotted rgba( white, .5 );
+		} @else if $bg == 'navy-light' {
+			color: white;
+			border-bottom: 2px dotted rgba( white, .5 );
+		} @else if $bg == 'sky' {
+			color: black;
+			border-bottom: 2px dotted rgba( black, .5 );
+		} @else if $bg == 'white' {
+			color: black;
+			border-bottom: 2px dotted rgba( black, .5 );
+		} @else if $bg == 'sun' {
+			color: black;
+			border-bottom: 2px dotted rgba( black, .5 );
+		}
+	}
+}
+
