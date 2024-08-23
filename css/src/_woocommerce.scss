@@ -1,0 +1,17 @@
+
+
+.woocommerce, .wp-block-woocommerce-cart {
+    a {
+        border-bottom: none;
+    }
+
+    button.single_add_to_cart_button, button.add_to_cart_button {
+        background-color: $sky !important;
+        color: black !important;
+        padding: 13px 30px 10px !important;
+    }
+
+    div.product div.images .woocommerce-product-gallery__image--placeholder {
+        border: none !important;
+    }
+}
