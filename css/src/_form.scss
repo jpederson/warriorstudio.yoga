@@ -122,3 +122,9 @@ button, input[type=submit] {
 
 }
 
+.gform_confirmation_message {
+	color: $sky;
+	@include font;
+	line-height: 1.4em;
+}
+

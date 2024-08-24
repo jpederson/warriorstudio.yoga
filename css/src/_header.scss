@@ -1,6 +1,6 @@
 
 
-header {
+.container > header {
 	position: relative;
 	@include background( 'navy' );
 	@include padding;
