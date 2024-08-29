@@ -32,7 +32,7 @@ if ( have_rows( 'column' ) ) :
                     <div class="price-description">
                         <?php print $description; ?>
                     </div>
-                    <?php if ( !empty( $price_discount ) ) : ?><div class="discount-note">* veterans & seniors only</div><?php endif; ?>
+                    <?php if ( !empty( $price_discount ) ) : ?><div class="discount-note">* veterans & 60+ only</div><?php endif; ?>
                     <?php if ( !empty( $button_text ) && !empty( $button_link ) && !empty( $button_color ) ) : ?>
                     <a href="<?php print $button_link ?>" class="btn <?php print $button_color; ?>"><?php print $button_text ?></a>
                     <?php endif; ?>
