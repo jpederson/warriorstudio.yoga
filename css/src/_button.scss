@@ -18,7 +18,7 @@
 	display: inline-block;
 	text-align: center;
 	background-color: $grey;
-	color: white;
+	color: white !important;
 	-webkit-appearance: none;
 	@include font-title-bold;
 	box-shadow: 3px 3px 15px rgba( black, .2 );
@@ -34,27 +34,27 @@
 
 	&.navy {
 		background-color: $navy;
-		color: white;
+		color: white !important;
 	}
 
 	&.sky {
 		background-color: $sky;
-		color: $navy;
+		color: $navy !important;
 	}
 
 	&.white {
 		background-color: white;
-		color: $navy;
+		color: $navy !important;
 	}
 
 	&.red {
 		background-color: $red;
-		color: white;
+		color: white !important;
 	}
 
 	&.sun {
 		background-color: $sun;
-		color: black;
+		color: black !important;
 	}
 }
 

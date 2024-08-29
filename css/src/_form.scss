@@ -24,13 +24,27 @@ button, input[type=submit] {
 
 	.gfield {
 		padding: 10px 0;
+		
+		&.hide {
+			display: none;
+		}
+	}
+
+	.ginput_total {
+		border: none !important;
+		padding: 0 !important;
+		font-size: 2.5em !important;
+		color: $navy !important;
+		font-family: "Josefin Sans", sans-serif !important;
+		font-weight: bold !important;
+		text-shadow: 0 0 30px white;
 	}
 
 	.gfield_description {
 		padding-top: 0 !important;
 		line-height: 1.4em !important;
 	}
-
+	
 	// some global field styles for donate form only
 	.short-form {
 		.gfield {
@@ -73,13 +87,6 @@ button, input[type=submit] {
 	
 	.gsection_description {
 		font-size: .9em;
-	}
-
-
-	span.ginput_total {
-		font-size: 1.5em;
-		font-weight: bold;
-		color: $sky;
 	}
 
 

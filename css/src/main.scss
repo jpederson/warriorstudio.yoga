@@ -17,6 +17,7 @@ $bp-s: 600px;
 $bp-m: 768px;
 $bp-l: 1024px;
 $bp-xl: 1150px;
+$bp-xxl: 1350px;
 
 
 // import all the things
@@ -28,7 +29,7 @@ $bp-xl: 1150px;
 
 
 // include the component css
-@import "component/page_header", "component/one_column", "component/two_column", "component/image", "component/cta", "component/quick_links", "component/code";
+@import "component/page_header", "component/one_column", "component/two_column", "component/image", "component/cta", "component/quick_links", "component/code", "component/pricing";
 
 
 // import lightbox styles

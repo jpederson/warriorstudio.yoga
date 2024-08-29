@@ -1,0 +1,91 @@
+
+
+.pricing-container {
+    @include padding;
+
+    &.pad-tall {
+        @include padding-tall
+    }
+
+    .pricing-inner {
+        @include respond-to( $bp-m ) {
+            display: flex;
+        }
+
+        @include respond-to( $bp-l ) {
+            display: flex;
+            margin-right: -3%;
+        }
+
+        .column {
+            box-shadow: 4px 4px 30px rgba( black, .2 );
+            margin-bottom: 30px;
+            padding: 30px 20px 80px;
+            text-align: center;
+            position: relative;
+            @include background( 'white' );
+            
+            @include respond-to( $bp-m ) {
+                flex: 1 1 fit-content;
+                padding: 30px 20px 80px;
+
+                p {
+                    font-size: .9em;
+                }
+            }    
+            
+            @include respond-to( $bp-l ) {
+                margin: 0 3.3333% 0 0;
+                padding: 40px 30px 80px;
+
+                p {
+                    font-size: .9em;
+                }
+            }    
+
+            .price {
+                @include font-title-bold;
+                font-size: 3em;
+                line-height: 1.35em;
+                color: $navy !important;
+
+                @include respond-to( $bp-m ) {
+                    padding: 15px 0;
+                }
+
+                @include respond-to( $bp-xl ) {
+                    padding: 25px 0;
+                    font-size: 4em;
+                }
+
+                @include respond-to( $bp-xxl ) {
+                    padding: 30px 0;
+                    font-size: 4.5em;
+                }
+
+                span {
+                    position: relative;
+                    top: 10px;
+                    left: 5px;
+                    color: $sky !important;
+                    font-size: .8em;
+                }
+            }
+
+            .discount-note {
+                @include font;
+                font-size: .85em;
+                color: rgba( black, .6 );
+                padding: 5px 0 15px;
+            }
+
+            .btn {
+                position: absolute;
+                bottom: 20px;
+                right: 50px;
+                left: 50px;
+            }
+        }
+    }
+}
+
