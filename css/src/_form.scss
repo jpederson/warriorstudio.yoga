@@ -130,7 +130,7 @@ button, input[type=submit] {
 		padding: 0 !important;
 
 		input[type=submit], input[type=button], input[type=reset], button {
-			@extend .btn.sky;
+			@extend .btn, .sky;
 			line-height: inherit !important;
 		}
 	}
