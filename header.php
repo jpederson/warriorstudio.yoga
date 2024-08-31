@@ -26,6 +26,16 @@
 <?php wp_head(); ?>
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=2" rel="stylesheet" type="text/css">
 
+<!-- google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7J91N4E0DB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-7J91N4E0DB');
+</script>
+
 </head>
 <body <?php body_class(); ?>>
 <div class="container">
