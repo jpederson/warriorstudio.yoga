@@ -57,10 +57,9 @@
 			border: 0;
 			padding: 0;
 			background: white;
-			color: transparent;
+			color: transparent !important;
 			background: url(../img/menu.svg) center center no-repeat;
 			overflow: hidden;
-			text-indent: 1000px;
 			opacity: .8;
 			
 			@include respond-to( $bp-s ) {

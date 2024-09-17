@@ -24,7 +24,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=2" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=3" rel="stylesheet" type="text/css">
 
 <!-- google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7J91N4E0DB"></script>
